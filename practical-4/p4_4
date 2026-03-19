@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Message Passing Example</title>
+</head>
+
+<body>
+
+    <script>
+
+        let student = {
+            name: "Sumit",
+
+
+            sendMessage: function (msg) {
+                document.write(this.name + " received message: " + msg + "<br>");
+            }
+        };
+
+
+        let teacher = {
+            name: "Teacher",
+
+
+            send: function (obj, message) {
+                obj.sendMessage(message);
+            }
+        };
+
+
+        teacher.send(student, "Complete your assignment");
+
+    </script>
+
+</body>
+
+</html>
