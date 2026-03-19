@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Object Example</title>
+</head>
+
+<body>
+
+    <script>
+
+        let student = {
+            name: "Sumit",
+            age: 20,
+            city: "kalol",
+
+
+            display: function () {
+                document.write("Name: " + this.name + "<br>");
+                document.write("Age: " + this.age + "<br>");
+                document.write("City: " + this.city + "<br>");
+            }
+        };
+
+
+        student.display();
+
+    </script>
+
+</body>
+
+</html>
