@@ -1,0 +1,44 @@
+!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>p2_4</title>
+</head>
+
+<body>
+
+    <script>
+        let num1 = parseInt(prompt("Enter first number:"));
+        let num2 = parseInt(prompt("Enter second number:"));
+        let choice = prompt("Enter operation (+, -, *, /):");
+
+        let result;
+
+        switch (choice) {
+            case "+":
+                result = num1 + num2;
+                break;
+
+            case "-":
+                result = num1 - num2;
+                break;
+
+            case "*":
+                result = num1 * num2;
+                break;
+
+            case "/":
+                result = num1 / num2;
+                break;
+
+            default:
+                result = "Invalid Operation";
+        }
+
+        document.write("Result: " + result);
+    </script>
+
+</body>
+
+</html>
