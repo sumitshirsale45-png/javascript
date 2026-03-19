@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Constructor Example</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Student(name, age, city) {
+            this.name = name;
+            this.age = age;
+            this.city = city;
+
+            this.display = function () {
+                document.write("Name: " + this.name + "<br>");
+                document.write("Age: " + this.age + "<br>");
+                document.write("City: " + this.city + "<br>");
+
+            };
+        }
+
+
+        let s1 = new Student("Sumit", 20, "kalol");
+        let s2 = new Student("yash", 22, " Ahmedabad");
+        let s3 = new Student("harsh", 19, "vadodara");
+
+
+        s1.display();
+        s2.display();
+        s3.display();
+
+    </script>
+
+</body>
+
+</html>
