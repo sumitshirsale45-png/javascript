@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>p2_3</title>
+</head>
+
+<body>
+    <script>
+        let marks = prompt("Enter your marks:");
+
+        if (marks >= 75) {
+            alert("Grade A");
+        }
+        else if (marks >= 60) {
+            alert("Grade B");
+        }
+        else if (marks >= 40) {
+            alert("Grade C");
+        }
+        else {
+            alert("Fail");
+        }
+    </script>
+
+</body>
+
+</html>
