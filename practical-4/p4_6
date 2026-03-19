@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Polymorphism Example</title>
+</head>
+
+<body>
+
+    <script>
+        
+        class Animal {
+            sound() {
+                document.write("Animal makes a sound<br>");
+            }
+        }
+
+        
+        class Dog extends Animal {
+            sound() {
+                document.write("Dog barks<br>");
+            }
+        }
+
+        
+        class Cat extends Animal {
+            sound() {
+                document.write("Cat meows<br>");
+            }
+        }
+
+        
+        let a;
+
+        a = new Dog();
+        a.sound();   
+
+        a = new Cat();
+        a.sound();   
+
+    </script>
+
+</body>
+
+</html>
