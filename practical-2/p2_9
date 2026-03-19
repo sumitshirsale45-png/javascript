@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>p2_9</title>
+</head>
+
+<body>
+
+    <script>
+        let age = parseInt(prompt("Enter your age:"));
+
+        try {
+            if (age < 18) {
+                throw "You are not eligible to vote!";
+            }
+            document.write("You are eligible to vote.");
+        }
+        catch (error) {
+            document.write("Error: " + error);
+        }
+    </script>
+
+</body>
+
+</html>
