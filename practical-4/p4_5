@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Inheritance Example</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+
+            display() {
+                document.write("Name: " + this.name + "<br>");
+            }
+        }
+
+
+        class Student extends Person {
+            constructor(name, age) {
+                super(name);
+                this.age = age;
+            }
+
+            show() {
+                document.write("Age: " + this.age + "<br>");
+            }
+        }
+
+
+        let s1 = new Student("Sumit", 20);
+
+
+        s1.display();
+        s1.show();
+
+    </script>
+
+</body>
+
+</html>
