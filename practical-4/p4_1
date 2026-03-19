@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Class Example</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Student {
+
+
+            constructor(name, age, city) {
+                this.name = name;
+                this.age = age;
+                this.city = city;
+            }
+
+
+            display() {
+                document.write("Name: " + this.name + "<br>");
+                document.write("Age: " + this.age + "<br>");
+                document.write("city: " + this.city + "<br>");
+            }
+        }
+
+
+        let student1 = new Student("Sumit", 20, "kalol");
+
+
+        student1.display();
+
+    </script>
+
+</body>
+
+</html>
